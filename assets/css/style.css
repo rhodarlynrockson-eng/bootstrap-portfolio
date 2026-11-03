@@ -1,0 +1,64 @@
+/*
+    Colour palette:
+    #a4c2d1 - Egg blue
+    #dbdcde - Light grey
+    #1f7798 - Mid-blue
+    #184f63 - Dark blue
+*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins&display=swap');
+/* Global styles */
+body {
+    background-color: #a4c2d1;
+    color: #184f63;
+     font-family: 'Poppins', sans-serif;
+}
+/* Buttons */
+.custom-button {
+    background-color: #1f7798;
+    border-color: #1f7798;
+}
+
+.custom-button:hover {
+    background-color: #1d6d8a;
+    border-color: #1d6d8a;
+}
+/* Section headings */
+h2 {
+    color: #184f63;
+}
+h1, h2, h3 {
+    font-family: 'DM Serif Display', serif;
+}
+/* Hero section */
+#hero {
+    background-image:
+    linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+    ),
+    url("../images/background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Portfolio button hover effect */
+.btn-outline-secondary:hover {
+    background-color: #1f7798;
+}
+/* Portfolio button hover effect */
+#portfolio .btn-outline-secondary:hover {
+    background-color: #1f7798;
+}
+/* Media queries */
+
+/* Bootstrap XL breakpoint */
+@media screen and (min-width: 1200px) {
+    #portfolio .card-text {
+        min-height: auto;
+    }
+}
+/* Remove rounded corners */
+.sharp-corners,
+.sharp-corners * {
+    border-radius: 0;
+}
